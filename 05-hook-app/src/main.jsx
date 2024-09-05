@@ -14,11 +14,15 @@ import { MemoHook } from './06-memo/MemoHook'
 import { CallbackHook } from './06-memo/CallbackHook'
 import { Padre } from './07-tarea-memo/Padre'
 import { TodoApp } from './08-UseReducer/TodoApp'
+import { MainApp } from './09-useContext/MainApp'
+import { BrowserRouter } from 'react-router-dom'
 // import  './08-UseReducer/intro-reducer';
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    {/* <MultipleCustomHooks /> */}
-    {/* <FocusScreen /> */}
-    <TodoApp />
-  </StrictMode>
+  <BrowserRouter>
+    <StrictMode>
+      {/* <MultipleCustomHooks /> */}
+      {/* <FocusScreen /> */}
+      <MainApp />
+    </StrictMode>
+  </BrowserRouter>
 )
