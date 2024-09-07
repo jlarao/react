@@ -17,6 +17,6 @@ export const todoReducer = (initialState = [], action) => {
                 return todo;
             })
         default:
-            return state
+            return initialState;
     }
 }
