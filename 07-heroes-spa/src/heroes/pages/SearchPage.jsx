@@ -1,8 +1,8 @@
-import { useLocation, useNavigate } from "react-router-dom";
-import { useForm } from "../../hook/useForm";
-import { HeroCard } from "../components";
-import queryString from "query-string";
-import { getHeroesByName } from "../helpers/getHeroesByName";
+import { useLocation, useNavigate } from 'react-router-dom';
+import { useForm } from '../../hook/useForm';
+import { HeroCard } from '../components';
+import queryString from 'query-string';
+import { getHeroesByName } from '../helpers/getHeroesByName';
 
 export const SearchPage = () => {
 
@@ -78,7 +78,7 @@ export const SearchPage = () => {
                         Search a hero
                     </div>
 
-                    <div className="alert alert-danger animate__animated animate__fadeIn" style={{ display: (showError) ? '' : 'none' }}>
+                    <div className="alert alert-danger animate__animated animate__fadeIn" style={{ display: (showError) ? '' : 'none' }} aria-label='alert-danger'>
                             Hero not found <b> {q} </b>
                         </div>
 
